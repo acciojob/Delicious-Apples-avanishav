@@ -1,1 +1,171 @@
-/* your code here */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #32cd32, #00ff7f);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.product {
+  display: flex;
+  width: 70%;
+  max-width: 1200px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.product__photo {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.photo-container {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.photo-main{
+  background: yellow;
+}
+.photo-main img {
+  width: 90%;
+  border-radius: 10px;
+}
+.controls {
+  position: absolute;
+  width: 100%;
+  top: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.controls i {
+  font-size: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.controls i:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transform: scale(1.1);
+}
+.photo-album ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.photo-album ul li img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.photo-album ul li img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.product__info {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title h1 {
+  font-size: 32px;
+  margin: 0;
+  color: #333;
+}
+
+.title span {
+  display: block;
+  margin-top: 5px;
+  color: #888;
+  font-size: 14px;
+}
+
+.price {
+  font-size: 28px;
+  color: #e63946;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.price span {
+  color: #333;
+}
+.variant h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #555;
+}
+
+.variant ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.variant ul li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.variant ul li img:hover {
+  border-color: #333;
+}
+
+.description ul {
+  margin: 0;
+  padding: 0;
+  list-style: disc;
+  margin-left: 20px;
+  color: #555;
+  font-size: 16px;
+}
+
+.description ul li {
+  margin: 8px 0;
+}
+.btn {
+  width: 200px;
+  background: #e63946;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background: #b71c1c;
+  transform: scale(1.05);
+}
